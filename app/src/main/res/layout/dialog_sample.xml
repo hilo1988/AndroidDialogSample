@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/messageTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="こんにちわ。これはサンプルです。"
+            android:layout_margin="4dp"
+    />
+
+
+    <View
+            android:id="@+id/delimiter"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/messageTxt"
+    />
+
+
+    <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_below="@id/messageTxt"
+            android:layout_toLeftOf="@id/delimiter"
+            android:layout_margin="4dp"
+    />
+
+    <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="キャンセル"
+            android:layout_toRightOf="@id/delimiter"
+            android:layout_below="@id/messageTxt"
+            android:layout_margin="4dp"
+    />
+
+</RelativeLayout>
